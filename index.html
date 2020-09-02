@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="MailCheck an email client app concept"
+		/>
+		<title>Inbox | MailCheck</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/app.css" />
+	</head>
+	<body>
+		<header class="appbar">
+			<div class="wrapper">
+				<div class="appbar-inner">
+					<div class="header-left">
+						<button title="Collapse Menu" class="menu-trigger">
+							<img src="img/icon-menu.svg" alt="" />
+						</button>
+						<a href="/" class="logo">MailCheck</a>
+					</div>
+					<div class="header-actions">
+						<div class="search-box">
+							<button title="Search" class="search-button">
+								<img src="img/icon-search.svg" alt="" />
+							</button>
+							<input
+								class="input-search"
+								type="text"
+								aria-label="Search Your Mailbox..."
+								placeholder="Search Your Mailbox..."
+							/>
+						</div>
+						<div class="button-actions">
+							<button class="button-action" title="Help">
+								<img src="img/icon-help.svg" alt="" />
+							</button>
+							<button class="button-action" title="Settings">
+								<img src="img/icon-gear.svg" alt="" />
+							</button>
+							<button class="button-action" title="Notifications">
+								<img src="img/icon-bell.svg" alt="" />
+							</button>
+							<button class="button-action" title="Profile">
+								<span class="circle">A</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main-area">
+			<aside class="sidebar">
+				<div class="btn-container">
+					<button class="btn btn-rounded btn-compose">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="21.023"
+							height="21.025"
+							viewBox="0 0 21.023 21.025"
+						>
+							<g id="edit" transform="translate(-108.19 -0.261)">
+								<path
+									id="Trazado_1114"
+									data-name="Trazado 1114"
+									d="M127.429,1.205a3.225,3.225,0,0,0-4.561,0L110.081,13.992a.716.716,0,0,0-.184.316l-1.681,6.07a.717.717,0,0,0,.882.882l6.07-1.682a.717.717,0,0,0,.316-.184L128.27,6.608a3.229,3.229,0,0,0,0-4.561ZM111.643,14.458,122.108,3.993l3.375,3.375L115.018,17.833Zm-.674,1.353,2.7,2.7-3.73,1.033ZM127.257,5.594l-.76.76-3.375-3.375.76-.76a1.792,1.792,0,0,1,2.534,0l.841.841A1.794,1.794,0,0,1,127.257,5.594Zm0,0"
+									transform="translate(0)"
+									fill="#fff"
+								/>
+							</g>
+						</svg>
+						Compose Email
+					</button>
+				</div>
+				<ul class="tags">
+					<li class="tag selected">
+						<div class="tag-name">
+							<img
+								src="img/icon-inbox.svg"
+								alt=""
+								class="tag-icon"
+							/>
+							Inbox
+						</div>
+						<span class="badge badge-red">15</span>
+					</li>
+					<li class="tag">
+						<div class="tag-name">
+							<img
+								src="img/icon-check.svg"
+								alt=""
+								class="tag-icon"
+							/>
+							Sent
+						</div>
+					</li>
+					<li class="tag">
+						<div class="tag-name">
+							<svg
+								class="tag-icon"
+								xmlns="http://www.w3.org/2000/svg"
+								width="21.023"
+								height="21.025"
+								viewBox="0 0 21.023 21.025"
+							>
+								<g
+									id="edit"
+									transform="translate(-108.19 -0.261)"
+								>
+									<path
+										id="Trazado_1114"
+										data-name="Trazado 1114"
+										d="M127.429,1.205a3.225,3.225,0,0,0-4.561,0L110.081,13.992a.716.716,0,0,0-.184.316l-1.681,6.07a.717.717,0,0,0,.882.882l6.07-1.682a.717.717,0,0,0,.316-.184L128.27,6.608a3.229,3.229,0,0,0,0-4.561ZM111.643,14.458,122.108,3.993l3.375,3.375L115.018,17.833Zm-.674,1.353,2.7,2.7-3.73,1.033ZM127.257,5.594l-.76.76-3.375-3.375.76-.76a1.792,1.792,0,0,1,2.534,0l.841.841A1.794,1.794,0,0,1,127.257,5.594Zm0,0"
+										transform="translate(0)"
+										fill="#fff"
+										class="icon-trash"
+									/>
+								</g>
+							</svg>
+							Drafts
+						</div>
+					</li>
+					<li class="tag">
+						<div class="tag-name">
+							<img
+								src="img/icon-star.svg"
+								alt=""
+								class="tag-icon"
+							/>
+							Starred
+						</div>
+					</li>
+					<li class="tag">
+						<div class="tag-name">
+							<img
+								src="img/icon-alert.svg"
+								alt=""
+								class="tag-icon"
+							/>
+							Junks
+						</div>
+					</li>
+					<li class="tag">
+						<div class="tag-name">
+							<img
+								src="img/icon-trash.svg"
+								alt=""
+								class="tag-icon"
+							/>
+							Trash
+						</div>
+					</li>
+				</ul>
+				<div class="categories-container">
+					<div class="categories-header">
+						<img
+							src="img/icon-categories.svg"
+							alt=""
+							class="header-icon"
+						/>
+						<h3 class="header-title">Categories</h3>
+					</div>
+					<ul class="categories">
+						<li class="category">
+							<div class="category-name">
+								<img
+									src="img/icon-agreement.svg"
+									alt=""
+									class="category-icon"
+								/>
+								Business
+							</div>
+						</li>
+						<li class="category">
+							<div class="category-name">
+								<img
+									src="img/icon-group.svg"
+									alt=""
+									class="category-icon"
+								/>
+								Socials
+							</div>
+						</li>
+						<li class="category">
+							<div class="category-name">
+								<img
+									src="img/icon-chat.svg"
+									alt=""
+									class="category-icon"
+								/>
+								Forum
+							</div>
+						</li>
+						<li class="category">
+							<div class="category-name">
+								<img
+									src="img/icon-online.svg"
+									alt=""
+									class="category-icon"
+								/>
+								Promotion
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="storage-container">
+					<div class="storage-header">
+						<h3 class="header-title">Storage</h3>
+					</div>
+					<div class="storage-info">
+						<span class="storage-available-text"
+							>10 GB Used of 15 GB</span
+						>
+						<div class="storage-bar"></div>
+					</div>
+				</div>
+			</aside>
+			<div class="inbox">
+				<div class="inbox-header">
+					<div class="email-filter">
+						<h3 class="filter-name">Newest First</h3>
+						<img src="img/chevron-down.svg" alt="" />
+					</div>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="20.414"
+						height="19.466"
+						viewBox="0 0 20.414 19.466"
+						class="icon-search"
+					>
+						<g
+							id="Group_9"
+							data-name="Group 9"
+							transform="translate(1 0.219)"
+						>
+							<ellipse
+								id="Oval"
+								cx="7.5"
+								cy="7.105"
+								rx="7.5"
+								ry="7.105"
+								transform="translate(0 0.781)"
+								fill="none"
+								stroke="#508FF4"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-miterlimit="10"
+								stroke-width="2"
+							/>
+							<path
+								id="Shape"
+								d="M5.2,4.926,0,0"
+								transform="translate(12.8 12.907)"
+								fill="none"
+								stroke="#818181"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-miterlimit="10"
+								stroke-width="2"
+							/>
+						</g>
+					</svg>
+				</div>
+				<ul class="email-list">
+					<li class="email">
+						<img
+							src="img/email1.jpg"
+							alt="Lindsey Rivard"
+							class="sender-photo"
+						/>
+						<div class="sender-info">
+							<p class="sender-name">Lindsey Rivard</p>
+							<p class="email-subject">Alivea Website Content</p>
+							<p class="email-body">
+								Alex was lost. He and his wife had made some bad
+								decisions, and they felt purposeless But then
+							</p>
+						</div>
+					</li>
+					<li class="email">
+						<img
+							src="img/email2.jpg"
+							alt="Dribbble"
+							class="sender-photo"
+						/>
+						<div class="sender-info">
+							<p class="sender-name">Dribbble</p>
+							<p class="email-subject">
+								Your invitation is expiring soon
+							</p>
+							<p class="email-body">
+								Time is running out to invite another talented
+								designer to join Dribbble. You have invitations…
+							</p>
+						</div>
+					</li>
+					<li class="email selected">
+						<img
+							src="img/email3.jpg"
+							alt="Elementor"
+							class="sender-photo"
+						/>
+						<div class="sender-info">
+							<p class="sender-name">Elementor</p>
+							<p class="email-subject">
+								How To Wireframe A Website
+							</p>
+							<p class="email-body">
+								Convert any wireframe or prototype into a
+								WordPress site, with Elementor’s Drag and Drop
+								Editor…
+							</p>
+						</div>
+					</li>
+					<li class="email">
+						<img
+							src="img/email4.jpg"
+							alt="Trello"
+							class="sender-photo"
+						/>
+						<div class="sender-info">
+							<p class="sender-name">Trello</p>
+							<p class="email-subject">
+								New sign in detected on your Trello account
+							</p>
+							<p class="email-body">
+								If you have not signed into Trello recently and
+								believe that someone else may have accessed
+								your…
+							</p>
+						</div>
+					</li>
+					<li class="email">
+						<img
+							src="img/email5.jpg"
+							alt="Spotify"
+							class="sender-photo"
+						/>
+						<div class="sender-info">
+							<p class="sender-name">Spotify</p>
+							<p class="email-subject">3 months Premium free</p>
+							<p class="email-body">
+								Your last chance to get a full 3 months Premium,
+								free. Choose any song and play without ads,
+								download and…
+							</p>
+						</div>
+					</li>
+					<li class="email">
+						<img
+							src="img/email6.jpg"
+							alt="Behance"
+							class="sender-photo"
+						/>
+						<div class="sender-info">
+							<p class="sender-name">Behance</p>
+							<p class="email-subject">
+								Designers, take this advice to the bank
+							</p>
+							<p class="email-body">
+								How to prepare for the ups & downs of
+								freelancing, advice on launching your creative
+								business, and what you should include in every
+								brand style guide.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="email-view">
+				<div class="email-view-header">
+					<button class="email-option" title="Reply">
+						<img src="img/icon-reply.svg" alt="" />
+					</button>
+					<button class="email-option" title="Inbox">
+						<img src="img/icon-inbox.svg" alt="" />
+					</button>
+					<button class="email-option" title="Print">
+						<img src="img/icon-print.svg" alt="" />
+					</button>
+					<button class="email-option" title="Move to Trash">
+						<img src="img/icon-trash.svg" alt="" />
+					</button>
+				</div>
+				<div class="email-view-content">
+					<div class="email-meta-wrapper">
+						<div class="sender-meta-wrapper">
+							<img
+								src="img/email3.jpg"
+								alt="Elementor"
+								class="sender-photo"
+							/>
+							<div class="sender-meta">
+								<h4 class="email-subject">
+									How To Wireframe A Website
+								</h4>
+								<p class="sender-name">
+									Elementor
+									<span class="sender-address"
+										>&lt;team@elementor.com&gt; Berhenti
+										berlangganan lorem202</span
+									>
+								</p>
+								<p class="email-to-name">Kepada saya</p>
+							</div>
+						</div>
+						<div class="email-meta">
+							<p class="datetime">11 Jun 2020 21:56</p>
+							<button class="email-meta-option" title="Reply">
+								<img src="img/icon-reply.svg" alt="" />
+							</button>
+							<button class="email-meta-option" title="Star">
+								<img src="img/icon-star.svg" alt="" />
+							</button>
+						</div>
+					</div>
+					<div class="email-view-body">
+						<p>Hi Wira Satya Pratama Biantong,</p>
+						<p>
+							We want to give you a tutorial on how to make a
+							wifeframe with an element, please see how to make a
+							wifeframe with an element below.
+						</p>
+						<img src="img/email-image.jpg" alt="Elementor editor" />
+						<h5 class="email-body-headline">
+							How To Wireframe A Website
+						</h5>
+						<p>
+							Convert any wireframe or prototype into a WordPress
+							site, with Elementor’s Drag and Drop Editor
+						</p>
+						<a href="#" class="btn"
+							>Read More <img src="img/forward-arrow.svg" alt=""
+						/></a>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
